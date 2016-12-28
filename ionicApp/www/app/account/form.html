@@ -1,0 +1,47 @@
+<div class="form-group">
+    <label class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+        <input type="text" name="name" class="form-control" ng-model="item.name">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">Code</label>
+    <div class="col-sm-10">
+        <input type="text" name="code" class="form-control" ng-model="item.code">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">Active Start Date</label>
+    <div class="col-sm-10">
+        <ocom-datetime-picker model="item.active_start_date"
+                              placeholder="Active Start Date"></ocom-datetime-picker>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">Active End Date</label>
+    <div class="col-sm-10">
+        <ocom-datetime-picker model="item.active_end_date"
+                              placeholder="Active End Date"></ocom-datetime-picker>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-2 control-label">Is master?</label>
+    <div class="col-sm-10 checkbox">
+        <label>
+            <input type="checkbox" ng-model="item.is_master">
+            <span class="ppm-checkbox"><i class="ppm-checkbox-icon fa fa-check"></i></span>
+        </label>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-2 control-label">Equipment Accounts</label>
+    <div class="col-sm-10">
+        <select multiple class="form-control" name="equipment_account"
+                ng-options="equipment_account.id as equipment_account.account_number for equipment_account in equipmentAccounts"
+                ng-model="item.equipment_account.account_number">
+            <option value="">None</option>
+        </select>
+    </div>
+</div>

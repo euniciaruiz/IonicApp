@@ -1,0 +1,38 @@
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <!-- Save Button -->
+        <button type="button" class="btn btn-primary"
+                ng-disabled="form.$invalid || formState.saving"
+                ng-click="update(item)">
+            <i class="glyphicon glyphicon-ok"></i> Update
+        </button>
+
+        <!-- Save and Close -->
+        <button type="button"
+                class="btn btn-primary"
+                ng-disabled="form.$invalid || formState.saving"
+                ng-click="updateAndClose(item)">
+            <i class="glyphicon glyphicon-ok"></i> Update and Close
+        </button>
+
+        <span ng-transclude></span>
+
+        <!-- Close -->
+        <button type="button"
+                class="btn btn-default"
+                ng-click="close(item)">
+            <i class="glyphicon glyphicon-list"></i> Close
+        </button>
+
+
+        <!-- Delete -->
+        <button type="button" class="btn btn-danger pull-right"
+                ng-disabled="formState.loaded"
+                ng-click="updateAndDelete(item)">
+            <i class="glyphicon glyphicon-trash"></i> Delete
+        </button>
+
+
+
+    </div>
+</div>

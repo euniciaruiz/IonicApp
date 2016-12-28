@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-sm-3">
+        <input type="text" class="form-control"
+               name="date" size="15"
+               ng-model="model"
+               data-autoclose="1"
+               placeholder="{{placeholder}}"
+               data-date-format="dd/MM/yyyy"
+               ng-disabled="item.locked"
+               bs-datepicker>
+    </div>
+    <div class="col-sm-3">
+        <div class="input-group">
+            <input type="text" class="form-control"
+                   name="time" size="8"
+                   ng-model="model"
+                   ng-disabled="item.locked"
+                   placeholder="{{placeholder}}"
+                   bs-timepicker>
+
+            <!-- Datetime auto-setter -->
+            <div class="input-group-addon" style="padding:0px;">
+                <a class="btn btn-sm" ng-click="setToday()" ng-disabled="item.locked">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </a>
+                <a class="btn btn-sm" ng-click="clearDate()" ng-disabled="item.locked">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

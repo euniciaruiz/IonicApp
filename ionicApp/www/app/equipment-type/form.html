@@ -1,0 +1,43 @@
+<div class="form-group required" >
+    <label class="col-sm-2 control-label">Code</label>
+    <div class="col-sm-10">
+        <input type="text" name="code" class="form-control" ng-model="item.code" required>
+    </div>
+</div>
+<div class="form-group required">
+    <label class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+        <input type="text" name="name" class="form-control" ng-model="item.name" required>
+    </div>
+</div>
+
+<div class="form-group required">
+    <label class="col-sm-2 control-label">Docket Number Length</label>
+    <div class="col-sm-10">
+        <input type="number" name="docket_number_length" class="form-control" ng-model="item.docket_number_length" required>
+    </div>
+</div>
+
+<div class="form-group required" >
+    <label class="col-sm-2 control-label">Colour</label>
+    <div class="col-sm-10">
+        <input type="text" name="colour" class="form-control" ng-model="item.colour" required>
+    </div>
+</div>
+
+
+<div class="form-group">
+    <label class="col-sm-2 control-label">Active Start Date</label>
+    <div class="col-sm-10">
+        <ocom-datetime-picker model="item.active_start_date"
+                              placeholder="Active Start Date"></ocom-datetime-picker>
+    </div>
+</div>
+<div class="form-group" required>
+    <label class="col-sm-2 control-label">Active End Date</label>
+    <div class="col-sm-10">
+        <ocom-datetime-picker model="item.active_end_date"
+                              placeholder="Active End Date"></ocom-datetime-picker>
+    </div>
+</div>
+

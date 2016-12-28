@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precise Pallet Management</title>
+
+    <!--Styles-->
+    <link href="scripts/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="scripts/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="scripts/ocom-angular-scaffolding/dist/css/scaffolding2.css" rel="stylesheet">
+    <link href="scripts/angular-loading-bar/build/loading-bar.min.css" rel="stylesheet">
+    <link href="scripts/angular-growl-v2/build/angular-growl.min.css" rel="stylesheet">
+    <link href="scripts/sweetalert/dist/sweetalert.css" rel="stylesheet">
+    <link href="scripts/ng-table.css" rel="stylesheet">
+    <link href="content/styles.css" rel="stylesheet">
+    <link href="content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.scripts for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.scripts doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div ui-view></div>
+<div growl></div>
+
+<!--// Libraries //-->
+<script src="scripts/jquery/dist/jquery.min.js"></script>
+<script src="scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/angular/angular.min.js"></script>
+<script src="scripts/angular-resource/angular-resource.min.js"></script>
+<script src="scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="scripts/angular-loading-bar/build/loading-bar.min.js"></script>
+<script src="scripts/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="scripts/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/angular-strap/dist/angular-strap.min.js"></script>
+<script src="scripts/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="scripts/angular-growl-v2/build/angular-growl.min.js"></script>
+<script src="scripts/angular-sweetalert/SweetAlert.min.js"></script>
+<script src="scripts/sweetalert/dist/sweetalert.min.js"></script>
+<script src="scripts/x2js/xml2json.min.js"></script>
+<script src="scripts/angular-xml/angular-xml.min.js"></script>
+<script src="scripts/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="scripts/ngstorage/ngStorage.min.js"></script>
+<script src="scripts/ng-file-upload/ng-file-upload.min.js"></script>
+<script src="scripts/ng-file-upload/ng-file-upload-all.min.js"></script>
+<script src="scripts/ng-table.js"></script>
+<script src="scripts/ngMask/dist/ngMask.min.js"></script>
+<script src="scripts/moment/moment.js"></script>
+<script src="scripts/moment/locale/en-au.js"></script>
+<script src="scripts/moment-timezone-with-data.js"></script>
+<script src="scripts/angular-moment/angular-moment.js"></script>
+<script src="scripts/angular-jwt/dist/angular-jwt.js"></script>
+<script src="scripts/angular-route/angular-route.js"></script>
+
+<!--// Base Modules //-->
+<script src="app/ocom/ocom.module.js"></script>
+<script src="app/ocom/ocom.config.js"></script>
+<script src="app/ocom/services/alerts.service.js"></script>
+<script src="app/ocom/services/data.service.js"></script>
+<script src="app/ocom/widgets/widgets.module.js"></script>
+<script src="app/ocom/widgets/ocom-create.js"></script>
+<script src="app/ocom/widgets/ocom-update.js"></script>
+<script src="app/ocom/widgets/ocom-table.js"></script>
+<script src="app/ocom/widgets/ocom-synch.js"></script>
+<script src="app/ocom/widgets/dates/ocom-datetime-picker.js"></script>
+<script src="app/ocom/widgets/errors/show-errors.directive.js"></script>
+<script src="app/ocom/widgets/forms/dirty-tracking.directive.js"></script>
+<script src="app/ocom/widgets/forms/list-append.directive.js"></script>
+<script src="app/ocom/widgets/forms/list-move-down.directive.js"></script>
+<script src="app/ocom/widgets/forms/list-move-up.directive.js"></script>
+<script src="app/ocom/widgets/forms/list-remove.directive.js"></script>
+<script src="app/ocom/widgets/lists/sortable.directive.js"></script>
+
+<!--// Custom Modules //-->
+<script src="app/dashboard/dashboard.module.js"></script>
+<script src="app/dashboard/config.route.js"></script>
+<script src="app/dashboard/dashboard.controller.js"></script>
+<script src="app/account/account.module.js"></script>
+<script src="app/account/config.route.js"></script>
+<script src="app/account/list.controller.js"></script>
+<script src="app/account/account.controller.js"></script>
+<script src="app/equipment-type/equipment-type.module.js"></script>
+<script src="app/equipment-type/config.route.js"></script>
+<script src="app/equipment-type/list.controller.js"></script>
+<script src="app/equipment-type/equipmentType.controller.js"></script>
+<script src="app/equipment-account/equipment-account.module.js"></script>
+<script src="app/equipment-account/config.route.js"></script>
+<script src="app/equipment-account/list.controller.js"></script>
+<script src="app/equipment-account/equipmentAccount.controller.js"></script>
+<script src="app/rule/rule.module.js"></script>
+<script src="app/rule/config.route.js"></script>
+<script src="app/rule/list.controller.js"></script>
+<script src="app/rule/rule.controller.js"></script>
+<script src="app/reason/reason.module.js"></script>
+<script src="app/reason/config.route.js"></script>
+<script src="app/reason/list.controller.js"></script>
+<script src="app/reason/create.controller.js"></script>
+
+<!--// Main Module //-->
+<script src="app/app.module.js"></script>
+<script src="app/app.config.js"></script>
+
+</body>
+</html>
